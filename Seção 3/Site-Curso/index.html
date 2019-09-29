@@ -3,66 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TecTreinamentos</title>
-    <style type="text/css">
-        header{
-            background-color: #50394c;
-            width: 100%;
-            height: 250px;
-            text-align: center;
-        }
-        #navegacao{
-            background-color: #ffef96;
-            text-align: center;
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript">
+        var nome = prompt("Caso queira, digite seu nome para que possamos personalisar o site. Caso não clique em cancelar e navegue normalmente.");
+    </script>
 
-        }
-
-        h1{ 
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            padding-top: 50px;
-        }
-
-        p{
-            text-align: justify;
-            font-size: 16px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;            
-        }
-
-        .conteudo{
-            padding: 30px;
-        }
-
-        footer{
-            background-color: red;
-            width: 100%;
-            height: 150px;
-
-        }
-        #rodape{
-            text-align: center;
-            color:white;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-        }   
-        #autor{
-            text-align: center;
-        }
-        .img-geral{
-            border-radius: 50px;
-        }
-        h2{
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
-        figure{
-            text-align: right;
-        }
-        a:hover{
-            background-color:red;
-        }
-
-    </style>
 </head>
 <header>
     <div id="navegacao">
@@ -75,6 +20,18 @@
         <h1> TecTreinamentos - Informativa </h1>
         <hr>
         <br>
+        <br>
+        <div id="java">
+            <script type="text/javascript">
+            document.write("Olá Sr(a) "+nome+" seja bem vindo(a)! Hoje é "+Date());
+            </script>
+        </div>
+        <br>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pRKUw09QOuc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
         <figure>
             <a href="https://goo.gl/SQ1BFD"><img style="border-radius: 10px" src="img/logica.png" alt="Lógica"></a>
             <a href="https://www.xbox.com/pt-br/live"><img style="border-radius: 10px" src="img/games.png" alt="Games"></a>
@@ -103,13 +60,39 @@
                 Tenho grande prazer em poder ensinar, transmitir conhecimento e claro, participar do crescimento das pessoas.</p>
         </figcaption>
     </figure>
+    <br>
+    <a name="contatos"></a>
+    <form method="post" id="mensagens-site" action="malito:mail.madson@gmail.com">
+        <fieldset>
+            <legend>Envie Sua Mensagens</legend>
+            <label for="cnome">NOME</label><br>
+            <input type="text" name="nome" id="cnome" placeholder="Digite seu nome completo"><br><br>
 
+            <label for="cemail">EMAIL</label><br>
+            <input type="email" name="email" id="cemail" placeholder="Digite seu e-mail"><br><br>
+
+            <label for="cmensagem">MENSAGEM</label><br>
+            <textarea name="mensagem" id="cmensagem" cols="30" rows="10" placeholder="Digite sua mensagem."></textarea><br><br>
+
+            <input type="submit" name="botao" value="ENVIAR">
+        </fieldset>
+    </form>
+    <br>
 </body>
 <footer>
     <div id="rodape">
         <h2>Tec Treinamentos - Informática</h2>
         <p">Todos os direitos reservados <br>Aluno: Madson Oliveira </p>
-    </div>    
+    </div><br>  
+
+    <div id="redes-sociais">
+
+        <a href="https://pt-br.facebook.com/login/"><img src="img/facebook.png" style="border-radius: 30%" alt="Facebook"></a>
+        <a href="https://www.instagram.com/?hl=pt-br"><img src="img/insta.png" style="border-radius: 30%" alt="Instagram"></a>
+        <a href="https://twitter.com/login?lang=pt"><img src="img/twitter.png" style="border-radius: 30%" alt="Twitter"></a>
+
+    </div>
+      
 </footer>
 
 </html>
